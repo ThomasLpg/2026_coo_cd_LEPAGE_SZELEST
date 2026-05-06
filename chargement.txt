@@ -1,0 +1,16 @@
+Question 5 :
+Dans un fichier texte chargement.txt, écrivez votre compréhension du diagramme
+de séquence ci-dessus et ajoutez ce fichier texte à votre dépôt (il fait partie des
+résultats attendus dans ce TP).
+
+Le Main créer un objet chargeur de type Chargeur
+il appelle chargerMagasin() sur chargeur
+chargeur créer un objet magasin de type Magasin, un objet chargeCd1 de type
+ChargeurCD et un objet cd1 de type CD
+chargeCd1 appelle extrairePiste() sur lui meme
+il appelle ajouterPiste sur cd1
+chargeCd1 appelle extrairePiste() sur lui meme
+il appelle ajouterPiste sur cd1
+L'objet cd1 et ramené a chargeur
+chargeur appelle ajouterCd(cd1) sur magasin
+chargeur est ramené a Main
