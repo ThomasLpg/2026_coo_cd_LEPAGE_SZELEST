@@ -1,5 +1,4 @@
 package donnees;
-
 import java.util.ArrayList;
 
 /**
@@ -68,10 +67,19 @@ public class Magasin {
 		return(res);
 	}
 
-	// TODO  ajouter une methode de tri
-
-	public int comparerParTitre(CD autre) {
-		return this.titre.compareTo(autre.titre);
+	public int comparerParAlbum(CD autre){
+		return this.listeCds
 	}
 
+	/*public int comparerParTitre(CD autre) {
+		return this.titre.compareTo(autre.titre);
+	}*/
+
+		public void trierAriste() {
+			throw new Error();
+		}
+
+		public void trierAlbum() {
+			throw new Error();
+		}
 }
