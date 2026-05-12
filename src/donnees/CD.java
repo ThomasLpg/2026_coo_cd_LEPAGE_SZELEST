@@ -17,7 +17,7 @@ import java.util.List;
  * Cette classe est utilisee par le magasin qui rassemble une liste de CDs.
  * 
  */
-public class CD implements Serializable {
+public class CD implements Comparable {
 
 	/**
 	 * constante pour definir comment afficher une separation entre les elements
@@ -100,6 +100,6 @@ public class CD implements Serializable {
 
 	public int compareTo(Object obj){
 		CD compare = (CD) obj;
-		return this.nomArtiste.compareTo(compare.nomArtiste);
+		return this.nomCD.compareTo(compare.nomCD);
     }
 }
