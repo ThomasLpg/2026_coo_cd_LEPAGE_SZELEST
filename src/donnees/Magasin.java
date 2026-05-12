@@ -67,8 +67,23 @@ public class Magasin {
 		return(res);
 	}
 
-	public int comparerParAlbum(CD autre){
-		return this.listeCds
+	public ArrayList<CD> comparerParAlbum(){
+		//Création de la liste triée
+		ArrayList<CD> listeTriee = new ArrayList<>();
+		//Chercher dans la liste l'indice du plus petit élément
+		while(!this.listeCds.isEmpty()){
+		int indicePetit = 0;
+		for(int i = 0; i<this.listeCds.size();i++){
+			if(this.listeCds.get(i).compareTo(this.listeCds.get(indicePetit)) < 0){
+				indicePetit = i;
+			}
+		}
+			//ajouter a la nouvelle liste en fin de liste
+			listeTriee.add(this.listeCds.get(indicePetit));
+			//supprimer de la liste initiale
+			this.listeCds.remove(this.listeCds.get(indicePetit));
+		}
+		return listeTriee;
 	}
 
 	/*public int comparerParTitre(CD autre) {
